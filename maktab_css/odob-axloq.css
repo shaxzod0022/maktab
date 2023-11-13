@@ -1,0 +1,104 @@
+.odob{
+    text-align: center;
+    padding: 40px 15px;
+    max-width: 75%;
+    margin: auto;
+    font-family: sans-serif;
+}
+main{
+    margin-top: 72px;
+    min-height: calc(100vh - 285px);
+}
+.odob-nav{
+    margin-top: -25px;
+}
+.odob-nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    /* font-family: sans-serif; */
+}
+.odob-li{
+    display: block;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 25px;
+}
+.odob-li a{
+    text-decoration: none;
+    display: flex;
+    /* -webkit-box-pack: center; */
+    justify-content: center;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    background: rgb(255, 255, 255);
+    flex-direction: column;
+    max-width: 264px;
+    width: 100%;
+    height: 150px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
+    margin: 0px auto;
+    font-size: 1.57rem;
+}
+.odob-li-div1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    margin-top: -15px;
+    margin-left: -15px;
+    position: relative;
+}
+.odob-li-div1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    border-radius: 5px;
+    border: 3px solid rgb(152, 187, 255);
+    z-index: 2;
+    top: -10px;
+    left: -10px;
+}
+.odob-li-div1{
+    width: 200px;
+    background-color: royalblue;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+}
+.odob-li-div2{
+    background: rgb(119, 165, 255);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+    overflow: hidden;
+}
+/* .odob-li-div2::before{
+    transform: translateY(-100%);
+    background: rgb(58, 125, 255);
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease 0s; */
+}
+.odob-li-div2 span{
+    line-height: 25px;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 7px;
+    color: white;
+}
